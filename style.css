@@ -1,0 +1,77 @@
+body {
+  width: 90%;
+  max-width: 640px;
+  margin: 0px auto;
+  padding: 100vh 2em 2em;
+  box-sizing: border-box;
+  background: black;
+  font-family: 'Varela Round', sans-serif;
+  color: blue;
+  line-height: 1.3;
+}
+body > div {
+  padding: 2em;
+  background: black;
+  border: 10px solid white;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+h2, p, ul {
+  padding-bottom: 1em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#midi-data {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background: transparentize white, 0.1;
+  border: 10px solid transparentize blue, 0.3;
+}
+#midi-data ul {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 1em;
+}
+#midi-data ul li {
+  padding: 0.2em 0.2em 0.2em 1em;
+  font-size: 1.6em;
+  font-family: monospace;
+}
+#midi-data ul li:last-child {
+  font-weight: bold;
+  color: black;
+  animation: flash 0.5s;
+}
+#midi-data ul li:last-child:before {
+  content: "> ";
+  margin-left: -1em;
+}
+#myVideo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@keyframes flash {
+  0% {
+    color: white;
+  }
+  100% {
+    color: black;
+  }
+}
