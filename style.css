@@ -59,7 +59,7 @@ p {
   content: "> ";
   margin-left: -1em;
 }
-#myVideo {
+#visualization {
 	position: absolute;
 	top: 0;
 	left: 0;
